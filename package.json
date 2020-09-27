@@ -3,14 +3,13 @@
   "version": "0.0.1",
   "main": "index.js",
   "repository": "git@github.com:pbalawender/bitmovin-modules-webpack.git",
-  "author": "<przemyslaw.balawender@merapar.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
     "build": "webpack"
   },
   "dependencies": {
-    "bitmovin-player": "^8.44.0",
+    "bitmovin-player": "8.42.2",
     "bitmovin-player-ui": "^3.17.0"
   },
   "devDependencies": {
@@ -19,6 +18,8 @@
     "babel-loader": "^8.1.0",
     "dotenv": "^8.2.0",
     "html-webpack-plugin": "^4.5.0",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   }

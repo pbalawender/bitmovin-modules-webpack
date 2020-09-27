@@ -6,23 +6,21 @@ const dotenv = require('dotenv').config({
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
-    entry: './src/index.js',
+    entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
+    resolve: {
+        extensions: [".ts", ".js"]
+    },
+    mode: 'development',
     module: {
         rules: [
             {
-                test: /\.js$/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
-                },
-                exclude: /node_modules/,
-
+                test: /\.ts$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
             }
         ]
     },

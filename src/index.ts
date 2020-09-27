@@ -1,4 +1,4 @@
-import Player from 'bitmovin-player/modules/bitmovinplayer-core';
+import Player, {LogLevel, ModuleName, ModuleReadyEvent, PlayerEvent} from 'bitmovin-player/modules/bitmovinplayer-core';
 import PolyfillModule from 'bitmovin-player/modules/bitmovinplayer-polyfill';
 import EngineBitmovinModule from 'bitmovin-player/modules/bitmovinplayer-engine-bitmovin';
 import ContainerMp4Module from 'bitmovin-player/modules/bitmovinplayer-container-mp4';
@@ -10,7 +10,7 @@ import XmlModule from 'bitmovin-player/modules/bitmovinplayer-xml';
 import DashModule from 'bitmovin-player/modules/bitmovinplayer-dash';
 import HlsModule from 'bitmovin-player/modules/bitmovinplayer-hls';
 import CryptoModule from 'bitmovin-player/modules/bitmovinplayer-crypto';
-import AdvertisingCoreModule from 'bitmovin-player/modules/bitmovinplayer-advertising-core';
+import AdvertisingCoreModule, {AdBreak, AdConfig} from 'bitmovin-player/modules/bitmovinplayer-advertising-core';
 import AdvertisingBitmovinModule from 'bitmovin-player/modules/bitmovinplayer-advertising-bitmovin';
 import EngineNativeModule from 'bitmovin-player/modules/bitmovinplayer-engine-native';
 import StyleModule from 'bitmovin-player/modules/bitmovinplayer-style';
@@ -21,8 +21,9 @@ import SubtitlesCea608Module from 'bitmovin-player/modules/bitmovinplayer-subtit
 import SubtitlesNativeModule from 'bitmovin-player/modules/bitmovinplayer-subtitles-native';
 import ServiceWorkerClientModule from 'bitmovin-player/modules/bitmovinplayer-serviceworker-client';
 import PatchModule from 'bitmovin-player/modules/bitmovinplayer-patch';
-import { UIFactory } from 'bitmovin-player-ui';
-const { BITMOVIN_LICENSE_KEY } = process.env;
+import {UIFactory} from 'bitmovin-player-ui';
+
+const { BITMOVIN_LICENSE_KEY = '' } = process.env;
 
 const preparePlayer = () => {
     Player.addModule(PolyfillModule);
@@ -50,8 +51,7 @@ const preparePlayer = () => {
 
 const setupPlayer = () => {
     preparePlayer();
-    const playerElement = document.getElementById('player');
-    console.error(BITMOVIN_LICENSE_KEY);
+    const playerElement: HTMLElement = document.getElementById('player') || document.createElement('div');
     const playerApi = new Player(playerElement, {
         key: BITMOVIN_LICENSE_KEY,
         ui: false,
@@ -61,20 +61,20 @@ const setupPlayer = () => {
         },
         logs: {
             bitmovin: false,
-            level: 'debug'
+            level: LogLevel.DEBUG
         },
         advertising: {
             adBreaks: [],
             withCredentials: false,
             strategy: {
-                shouldPlayAdBreak: (toPlay) => {
+                shouldPlayAdBreak: (toPlay: AdBreak) => {
                     // when resuming a previously watched video only show pre adbreaks
                     return !(
                         toPlay?.scheduleTime < 0 &&
-                        toPlay?.position !== 'pre'
+                      (toPlay as any)?.position !== 'pre'
                     );
                 },
-                shouldPlaySkippedAdBreaks: (skipped) => {
+                shouldPlaySkippedAdBreaks: (skipped: AdBreak[]) => {
                     // scrubbing over multiple adbreaks will only play last one
                     return skipped.length ? [skipped[skipped.length - 1]] : skipped;
                 }
@@ -99,14 +99,14 @@ const setupPlayer = () => {
             console.log('Error while creating Bitmovin Player instance', reason)
         }
     );
-    playerApi.on('moduleready', (event) => {
-        if (event.name === 'Advertising') {
+    playerApi.on(PlayerEvent.ModuleReady, (event) => {
+        if ((event as ModuleReadyEvent).name === ModuleName.Advertising) {
             playerApi.ads.schedule({
                 tag: {
                     url: 'http://qmzo7.mocklab.io/dummy-vmap',
                     type: 'vmap',
                 },
-           },)
+           } as AdConfig)
         }
     });
 }
