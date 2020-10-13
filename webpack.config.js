@@ -4,6 +4,7 @@ const dotenv = require('dotenv').config({
     path: path.join(__dirname, '.env')
 });
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const config = {
     entry: './src/index.js',
@@ -27,6 +28,11 @@ const config = {
         ]
     },
     plugins: [
+        new CopyPlugin({
+            patterns: [
+                { from: 'public', to: '.' },
+            ],
+        }),
         new webpack.DefinePlugin({
             "process.env": dotenv.parsed
         }),

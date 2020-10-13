@@ -51,7 +51,7 @@ const preparePlayer = () => {
 const setupPlayer = () => {
     preparePlayer();
     const playerElement = document.getElementById('player');
-    console.error(BITMOVIN_LICENSE_KEY);
+
     const playerApi = new Player(playerElement, {
         key: BITMOVIN_LICENSE_KEY,
         ui: false,
@@ -60,7 +60,7 @@ const setupPlayer = () => {
             muted: true
         },
         logs: {
-            bitmovin: false,
+            bitmovin: true,
             level: 'debug'
         },
         advertising: {
@@ -82,31 +82,44 @@ const setupPlayer = () => {
         }
     });
     const source = {
-        title: "Getting Started with the Bitmovin Player",
-        dash: 'https://bitmovin-a.akamaihd.net/content/MI201109210084_1/mpds/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.mpd',
-        hls: 'https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8',
-        progressive: 'https://bitmovin-a.akamaihd.net/content/MI201109210084_1/MI201109210084_mpeg-4_hd_high_1080p25_10mbits.mp4',
-        poster: 'https://bitmovin-a.akamaihd.net/content/MI201109210084_1/poster.jpg'
+        dash: 'https://media.axprod.net/TestVectors/v6.1-MultiDRM/Manifest_1080p.mpd',
+        drm: {
+            playready: {
+                LA_URL: 'https://drm-playready-licensing.axtest.net/AcquireLicense',
+                utf8message: true,
+                plaintextChallenge: true,
+                headers: { 'Content-Type': 'text/xml', 'X-AxDRM-Message': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLCJjb21fa2V5X2lkIjoiNjllNTQwODgtZTllMC00NTMwLThjMWEtMWViNmRjZDBkMTRlIiwibWVzc2FnZSI6eyJ0eXBlIjoiZW50aXRsZW1lbnRfbWVzc2FnZSIsImtleXMiOlt7ImlkIjoiNmU1YTFkMjYtMjc1Ny00N2Q3LTgwNDYtZWFhNWQxZDM0YjVhIn1dfX0.yF7PflOPv9qHnu3ZWJNZ12jgkqTabmwXbDWk_47tLNE',
+                }
+            },
+            widevine: {
+                LA_URL: 'https://drm-widevine-licensing.axtest.net/AcquireLicense',
+                utf8message: true,
+                plaintextChallenge: true,
+                headers: { 'Content-Type': 'text/xml', 'X-AxDRM-Message': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLCJjb21fa2V5X2lkIjoiNjllNTQwODgtZTllMC00NTMwLThjMWEtMWViNmRjZDBkMTRlIiwibWVzc2FnZSI6eyJ0eXBlIjoiZW50aXRsZW1lbnRfbWVzc2FnZSIsImtleXMiOlt7ImlkIjoiNmU1YTFkMjYtMjc1Ny00N2Q3LTgwNDYtZWFhNWQxZDM0YjVhIn1dfX0.yF7PflOPv9qHnu3ZWJNZ12jgkqTabmwXbDWk_47tLNE',
+                }
+            }
+        }
     };
 
     UIFactory.buildDefaultUI(playerApi);
 
     playerApi.load(source).then(
         () => {
-            console.log('Successfully created Bitmovin Player instance')
+            console.log('Successfully created Bitmovin Player instance', source)
         },
         (reason) => {
             console.log('Error while creating Bitmovin Player instance', reason)
         }
     );
+    playerApi.getSupportedDRM().then(drms => console.log(drms));
     playerApi.on('moduleready', (event) => {
         if (event.name === 'Advertising') {
             playerApi.ads.schedule({
                 tag: {
-                    url: 'http://qmzo7.mocklab.io/dummy-vmap',
+                    url: `${document.location.href}vmap-skyq.xml`,
                     type: 'vmap',
                 },
-           },)
+           });
         }
     });
 }

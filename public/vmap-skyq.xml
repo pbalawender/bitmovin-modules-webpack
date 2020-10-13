@@ -1,0 +1,160 @@
+<vmap:VMAP version='1.0' xmlns:vmap='http://www.iab.net/vmap-1.0'>
+    <vmap:AdBreak breakId='cue_point-699623982' breakType='linear' timeOffset='00:00:20'>
+        <vmap:AdSource allowMultipleAds='true' followRedirects='true' id='1'>
+            <vmap:VASTAdData>
+                <VAST version='3.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+                      xsi:noNamespaceSchemaLocation='vast.xsd'>
+                    <Ad id='47974121.139695392440064' sequence='1'>
+                        <InLine>
+                            <AdSystem>FreeWheel</AdSystem>
+                            <AdTitle>My Mortgage Free Home</AdTitle>
+                            <Error>
+                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47974121&reid=40483671&arid=0&iw=&uxnw=&uxss=&uxct=&et=e&cn=%5BERRORCODE%5D]]></Error>
+                            <Impression id='FWi_47974121.0'>
+                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47974121&reid=40483671&arid=0&auid=&cn=defaultImpression&et=i&_cc=47974121,40483671,,39008.40338.47009.49014.49550.50949.57068.66122.,1602596069,1&tpos=1027&iw=&uxnw=&uxss=&uxct=&metr=121&init=1&asid=152444431&ssid=15563030&vcid2=888aa3214e31ab8f18f8196362187deab8d7ca0e791b3af325683db8cc506152&cr=]]></Impression>
+                            <Creatives>
+                                <Creative AdID='47974121' id='8119981'>
+                                    <Linear>
+                                        <Duration>00:00:15</Duration>
+                                        <TrackingEvents>
+                                            <Tracking event='complete'>
+                                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47974121&reid=40483671&arid=0&auid=&cn=complete&et=i&_cc=&tpos=1027&init=1&iw=&uxnw=&uxss=&uxct=&metr=121]]></Tracking>
+                                            <Tracking event='firstQuartile'>
+                                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47974121&reid=40483671&arid=0&auid=&cn=firstQuartile&et=i&_cc=&tpos=1027&init=1&iw=&uxnw=&uxss=&uxct=&metr=121]]></Tracking>
+                                            <Tracking event='midpoint'>
+                                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47974121&reid=40483671&arid=0&auid=&cn=midPoint&et=i&_cc=&tpos=1027&init=1&iw=&uxnw=&uxss=&uxct=&metr=121]]></Tracking>
+                                            <Tracking event='thirdQuartile'>
+                                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47974121&reid=40483671&arid=0&auid=&cn=thirdQuartile&et=i&_cc=&tpos=1027&init=1&iw=&uxnw=&uxss=&uxct=&metr=121]]></Tracking>
+                                        </TrackingEvents>
+                                        <VideoClicks>
+                                            <ClickTracking id='FWc_47974121.0'>
+                                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47974121&reid=40483671&arid=0&auid=&cn=defaultClick&et=c&_cc=&tpos=1027&cr=]]></ClickTracking>
+                                        </VideoClicks>
+                                        <MediaFiles>
+                                            <MediaFile bitrate='3257' delivery='progressive' height='720' id='40483671'
+                                                       type='video/mp4' width='1280'>
+                                                <![CDATA[https://dni-adops-proxy-prod-adopsmediaconverter.mercury.dnitv.com/48747/388209/MY%20MORTGAGE%20FREE%20HOME%20DPLAY%20PRE%20ROLL_2020-10-09T13:47:19Z_1280x720.mp4]]></MediaFile>
+                                            <MediaFile bitrate='6282' delivery='progressive' height='1080' id='40483672'
+                                                       type='video/mp4' width='1920'>
+                                                <![CDATA[https://dni-adops-proxy-prod-adopsmediaconverter.mercury.dnitv.com/48747/388209/MY%20MORTGAGE%20FREE%20HOME%20DPLAY%20PRE%20ROLL_2020-10-09T13:47:19Z_1920x1080.mp4]]></MediaFile>
+                                            <MediaFile bitrate='1361' delivery='progressive' height='360' id='40483673'
+                                                       type='video/mp4' width='640'>
+                                                <![CDATA[https://dni-adops-proxy-prod-adopsmediaconverter.mercury.dnitv.com/48747/388209/MY%20MORTGAGE%20FREE%20HOME%20DPLAY%20PRE%20ROLL_2020-10-09T13:47:19Z_640x360.mp4]]></MediaFile>
+                                            <MediaFile bitrate='1929' delivery='progressive' height='480' id='40483674'
+                                                       type='video/mp4' width='854'>
+                                                <![CDATA[https://dni-adops-proxy-prod-adopsmediaconverter.mercury.dnitv.com/48747/388209/MY%20MORTGAGE%20FREE%20HOME%20DPLAY%20PRE%20ROLL_2020-10-09T13:47:19Z_854x480.mp4]]></MediaFile>
+                                            <MediaFile bitrate='2259' delivery='progressive' height='540' id='40483675'
+                                                       type='video/mp4' width='960'>
+                                                <![CDATA[https://dni-adops-proxy-prod-adopsmediaconverter.mercury.dnitv.com/48747/388209/MY%20MORTGAGE%20FREE%20HOME%20DPLAY%20PRE%20ROLL_2020-10-09T13:47:19Z_960x540.mp4]]></MediaFile>
+                                        </MediaFiles>
+                                    </Linear>
+                                </Creative>
+                            </Creatives>
+                            <Extensions>
+                                <Extension type='FreeWheel'>
+                                    <AdInfo customaid='' gid='0' cid='' format='spot_standard' variant='NORMAL'
+                                            exclusive='false'/>
+                                    <CreativeParameters>
+                                        <CreativeParameter creativeId='8119981' name='moat' type='Linear'>
+                                            <![CDATA[48747;48747;388209;40187686;40187687;;47974120;59768;g12270387;g797344;15563030;152444431;DMAXDE_DE_DCB448860010100;8119981;40483671;15;midroll;;48747:DiscoveryIntl_BrightcoveJS_secure;cpx-;1602596069529458768]]></CreativeParameter>
+                                    </CreativeParameters>
+                                </Extension>
+                            </Extensions>
+                        </InLine>
+                    </Ad>
+                </VAST>
+            </vmap:VASTAdData>
+        </vmap:AdSource>
+        <vmap:TrackingEvents>
+            <vmap:Tracking event='breakStart'>
+                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&cn=slotImpression&et=i&tpos=1027&init=1&slid=5,6,7,8]]></vmap:Tracking>
+            <vmap:Tracking event='breakEnd'>
+                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&cn=slotEnd&et=i&tpos=1027&init=1&slid=5,6,7,8]]></vmap:Tracking>
+        </vmap:TrackingEvents>
+    </vmap:AdBreak>
+    <vmap:AdBreak breakId='cue_point-2032991768' breakType='linear' timeOffset='00:00:10'>
+        <vmap:AdSource allowMultipleAds='true' followRedirects='true' id='3'>
+            <vmap:VASTAdData>
+                <VAST version='3.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+                      xsi:noNamespaceSchemaLocation='vast.xsd'>
+                    <Ad id='46281099.139695392438528' sequence='1'>
+                        <InLine>
+                            <AdSystem>FreeWheel</AdSystem>
+                            <AdTitle>Co-op Supersaver Food UK Oct 2020 - Flight 1 Preroll</AdTitle>
+                            <Error>
+                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47641119&reid=39652867&arid=0&iw=&uxnw=&uxss=&uxct=&et=e&cn=%5BERRORCODE%5D]]></Error>
+                            <Impression id='FWi_47641119.0'>
+                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47641119&reid=39652867&arid=0&auid=&cn=defaultImpression&et=i&_cc=47641119,39652867,,39008.40094.40338.47009.49014.49550.50949.57068.66122.,1602596069,1&tpos=0&iw=&uxnw=&uxss=&uxct=&metr=121&init=1&vcid2=888aa3214e31ab8f18f8196362187deab8d7ca0e791b3af325683db8cc506152&cr=https%3A//ad.doubleclick.net/ddm/trackimp/N1025707.2541305DISCOVERYCOMMUNI/B24662197.283048016%3Bdc_trk_aid%3D477073880%3Bdc_trk_cid%3D138307860%3Bord%3D1201252725%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bgdpr%3D1%3Bgdpr_consent%3DCO7OKqwO7OKqwAcABBENA7CMAP_AAH_AACiQG1tf_X_fb3_j-_5999t0eY1f9_7_v20zjgeds-8Nyd_X_L8X6mM7vB36pq4KuR4Eu3LBAQdlHOHcTQmQ6IkVqTLsbk2Mr7NKJ7PEilMbO2dYGH9_n9XTuZKY79_s___z__-_-___77f_r-3_3_vpgbSASYal8BFkJYwEk0aVQogQhXEh0AIAKKEYWiawgJXBTsrgI_QQMAEBqAjAiBBiCjFkEAAAAASURACAHggEQBEAgABACpAQgAI0AQWAEgYBAAKAaFgBFEEIEhBkcFRyiBARItFBPJGAJRc7GEEIIAAA.IG2Nf_X_fb3_j-_599_t0eY1f9_7_v20zjheds-8Nyd_X_L8X_2M7vB36pr4KuR4ku3bBAQdtHOncTQmR6IlVqTLsbk2Mr7NKJ7PEmlsbe2dYGH9_n9XT_ZKZ79_v___7________77______3_v7wAA%3F]]></Impression>
+                            <Impression id='FWi_47641119.0.1'>
+                                <![CDATA[https://ads.stickyadstv.com/user-matching?id=185&_fw_gdpr=1&_fw_gdpr_consent=CO7OKqwO7OKqwAcABBENA7CMAP_AAH_AACiQG1tf_X_fb3_j-_5999t0eY1f9_7_v20zjgeds-8Nyd_X_L8X6mM7vB36pq4KuR4Eu3LBAQdlHOHcTQmQ6IkVqTLsbk2Mr7NKJ7PEilMbO2dYGH9_n9XTuZKY79_s___z__-_-___77f_r-3_3_vpgbSASYal8BFkJYwEk0aVQogQhXEh0AIAKKEYWiawgJXBTsrgI_QQMAEBqAjAiBBiCjFkEAAAAASURACAHggEQBEAgABACpAQgAI0AQWAEgYBAAKAaFgBFEEIEhBkcFRyiBARItFBPJGAJRc7GEEIIAAA.IG2Nf_X_fb3_j-_599_t0eY1f9_7_v20zjheds-8Nyd_X_L8X_2M7vB36pr4KuR4ku3bBAQdtHOncTQmR6IlVqTLsbk2Mr7NKJ7PEmlsbe2dYGH9_n9XT_ZKZ79_v___7________77______3_v7wAA]]></Impression>
+                            <Impression id='FWi_47641119.0.2'>
+                                <![CDATA[https://dpm.demdex.net/ibs:dpid=796&dpuuid=888aa3214e31ab8f18f8196362187deab8d7ca0e791b3af325683db8cc506152]]></Impression>
+                            <Impression id='FWi_47641119.0.3'>
+                                <![CDATA[https://ads.stickyadstv.com/user-matching?id=185&_fw_gdpr=1&_fw_gdpr_consent=CO7OKqwO7OKqwAcABBENA7CMAP_AAH_AACiQG1tf_X_fb3_j-_5999t0eY1f9_7_v20zjgeds-8Nyd_X_L8X6mM7vB36pq4KuR4Eu3LBAQdlHOHcTQmQ6IkVqTLsbk2Mr7NKJ7PEilMbO2dYGH9_n9XTuZKY79_s___z__-_-___77f_r-3_3_vpgbSASYal8BFkJYwEk0aVQogQhXEh0AIAKKEYWiawgJXBTsrgI_QQMAEBqAjAiBBiCjFkEAAAAASURACAHggEQBEAgABACpAQgAI0AQWAEgYBAAKAaFgBFEEIEhBkcFRyiBARItFBPJGAJRc7GEEIIAAA.IG2Nf_X_fb3_j-_599_t0eY1f9_7_v20zjheds-8Nyd_X_L8X_2M7vB36pr4KuR4ku3bBAQdtHOncTQmR6IlVqTLsbk2Mr7NKJ7PEmlsbe2dYGH9_n9XT_ZKZ79_v___7________77______3_v7wAA]]></Impression>
+                            <Impression id='FWi_47641119.0.4'>
+                                <![CDATA[https://ads.stickyadstv.com/user-matching?id=11&_fw_gdpr=1&_fw_gdpr_consent=CO7OKqwO7OKqwAcABBENA7CMAP_AAH_AACiQG1tf_X_fb3_j-_5999t0eY1f9_7_v20zjgeds-8Nyd_X_L8X6mM7vB36pq4KuR4Eu3LBAQdlHOHcTQmQ6IkVqTLsbk2Mr7NKJ7PEilMbO2dYGH9_n9XTuZKY79_s___z__-_-___77f_r-3_3_vpgbSASYal8BFkJYwEk0aVQogQhXEh0AIAKKEYWiawgJXBTsrgI_QQMAEBqAjAiBBiCjFkEAAAAASURACAHggEQBEAgABACpAQgAI0AQWAEgYBAAKAaFgBFEEIEhBkcFRyiBARItFBPJGAJRc7GEEIIAAA.IG2Nf_X_fb3_j-_599_t0eY1f9_7_v20zjheds-8Nyd_X_L8X_2M7vB36pr4KuR4ku3bBAQdtHOncTQmR6IlVqTLsbk2Mr7NKJ7PEmlsbe2dYGH9_n9XT_ZKZ79_v___7________77______3_v7wAA]]></Impression>
+                            <Impression id='FWi_47641119.0.5'>
+                                <![CDATA[https://ads.stickyadstv.com/user-matching?id=185&_fw_gdpr=1&_fw_gdpr_consent=CO7OKqwO7OKqwAcABBENA7CMAP_AAH_AACiQG1tf_X_fb3_j-_5999t0eY1f9_7_v20zjgeds-8Nyd_X_L8X6mM7vB36pq4KuR4Eu3LBAQdlHOHcTQmQ6IkVqTLsbk2Mr7NKJ7PEilMbO2dYGH9_n9XTuZKY79_s___z__-_-___77f_r-3_3_vpgbSASYal8BFkJYwEk0aVQogQhXEh0AIAKKEYWiawgJXBTsrgI_QQMAEBqAjAiBBiCjFkEAAAAASURACAHggEQBEAgABACpAQgAI0AQWAEgYBAAKAaFgBFEEIEhBkcFRyiBARItFBPJGAJRc7GEEIIAAA.IG2Nf_X_fb3_j-_599_t0eY1f9_7_v20zjheds-8Nyd_X_L8X_2M7vB36pr4KuR4ku3bBAQdtHOncTQmR6IlVqTLsbk2Mr7NKJ7PEmlsbe2dYGH9_n9XT_ZKZ79_v___7________77______3_v7wAA]]></Impression>
+                            <Impression id='FWi_47641119.0.6'>
+                                <![CDATA[https://ads.stickyadstv.com/user-matching?id=2545&_fw_gdpr=1&_fw_gdpr_consent=CO7OKqwO7OKqwAcABBENA7CMAP_AAH_AACiQG1tf_X_fb3_j-_5999t0eY1f9_7_v20zjgeds-8Nyd_X_L8X6mM7vB36pq4KuR4Eu3LBAQdlHOHcTQmQ6IkVqTLsbk2Mr7NKJ7PEilMbO2dYGH9_n9XTuZKY79_s___z__-_-___77f_r-3_3_vpgbSASYal8BFkJYwEk0aVQogQhXEh0AIAKKEYWiawgJXBTsrgI_QQMAEBqAjAiBBiCjFkEAAAAASURACAHggEQBEAgABACpAQgAI0AQWAEgYBAAKAaFgBFEEIEhBkcFRyiBARItFBPJGAJRc7GEEIIAAA.IG2Nf_X_fb3_j-_599_t0eY1f9_7_v20zjheds-8Nyd_X_L8X_2M7vB36pr4KuR4ku3bBAQdtHOncTQmR6IlVqTLsbk2Mr7NKJ7PEmlsbe2dYGH9_n9XT_ZKZ79_v___7________77______3_v7wAA]]></Impression>
+                            <Creatives>
+                                <Creative AdID='47641119' id='8043477'>
+                                    <Linear>
+                                        <Duration>00:00:10</Duration>
+                                        <TrackingEvents>
+                                            <Tracking event='complete'>
+                                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47641119&reid=39652867&arid=0&auid=&cn=complete&et=i&_cc=&tpos=0&init=1&iw=&uxnw=&uxss=&uxct=&metr=121]]></Tracking>
+                                            <Tracking event='firstQuartile'>
+                                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47641119&reid=39652867&arid=0&auid=&cn=firstQuartile&et=i&_cc=&tpos=0&init=1&iw=&uxnw=&uxss=&uxct=&metr=121]]></Tracking>
+                                            <Tracking event='midpoint'>
+                                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47641119&reid=39652867&arid=0&auid=&cn=midPoint&et=i&_cc=&tpos=0&init=1&iw=&uxnw=&uxss=&uxct=&metr=121]]></Tracking>
+                                            <Tracking event='thirdQuartile'>
+                                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47641119&reid=39652867&arid=0&auid=&cn=thirdQuartile&et=i&_cc=&tpos=0&init=1&iw=&uxnw=&uxss=&uxct=&metr=121]]></Tracking>
+                                        </TrackingEvents>
+                                        <VideoClicks>
+                                            <ClickThrough id='FWc_47641119.0'>
+                                                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&r=48747&adid=47641119&reid=39652867&arid=0&auid=&cn=defaultClick&et=c&_cc=&tpos=0&cr=https%3A//ad.doubleclick.net/ddm/trackclk/N1025707.2541305DISCOVERYCOMMUNI/B24662197.283048016%3Bdc_trk_aid%3D477073880%3Bdc_trk_cid%3D138307860%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bgdpr%3D1%3Bgdpr_consent%3DCO7OKqwO7OKqwAcABBENA7CMAP_AAH_AACiQG1tf_X_fb3_j-_5999t0eY1f9_7_v20zjgeds-8Nyd_X_L8X6mM7vB36pq4KuR4Eu3LBAQdlHOHcTQmQ6IkVqTLsbk2Mr7NKJ7PEilMbO2dYGH9_n9XTuZKY79_s___z__-_-___77f_r-3_3_vpgbSASYal8BFkJYwEk0aVQogQhXEh0AIAKKEYWiawgJXBTsrgI_QQMAEBqAjAiBBiCjFkEAAAAASURACAHggEQBEAgABACpAQgAI0AQWAEgYBAAKAaFgBFEEIEhBkcFRyiBARItFBPJGAJRc7GEEIIAAA.IG2Nf_X_fb3_j-_599_t0eY1f9_7_v20zjheds-8Nyd_X_L8X_2M7vB36pr4KuR4ku3bBAQdtHOncTQmR6IlVqTLsbk2Mr7NKJ7PEmlsbe2dYGH9_n9XT_ZKZ79_v___7________77______3_v7wAA]]></ClickThrough>
+                                        </VideoClicks>
+                                        <MediaFiles>
+                                            <MediaFile bitrate='2196' delivery='progressive' height='720' id='39652867'
+                                                       type='video/mp4' width='1280'>
+                                                <![CDATA[https://dni-adops-proxy-prod-adopsmediaconverter.mercury.dnitv.com/48747/598649/LYG-CPFD077-010_2020-10-07T12:43:08Z_1280x720.mp4]]></MediaFile>
+                                            <MediaFile bitrate='4007' delivery='progressive' height='1080' id='39652868'
+                                                       type='video/mp4' width='1920'>
+                                                <![CDATA[https://dni-adops-proxy-prod-adopsmediaconverter.mercury.dnitv.com/48747/598649/LYG-CPFD077-010_2020-10-07T12:43:08Z_1920x1080.mp4]]></MediaFile>
+                                            <MediaFile bitrate='950' delivery='progressive' height='360' id='39652869'
+                                                       type='video/mp4' width='640'>
+                                                <![CDATA[https://dni-adops-proxy-prod-adopsmediaconverter.mercury.dnitv.com/48747/598649/LYG-CPFD077-010_2020-10-07T12:43:08Z_640x360.mp4]]></MediaFile>
+                                            <MediaFile bitrate='1350' delivery='progressive' height='480' id='39652870'
+                                                       type='video/mp4' width='854'>
+                                                <![CDATA[https://dni-adops-proxy-prod-adopsmediaconverter.mercury.dnitv.com/48747/598649/LYG-CPFD077-010_2020-10-07T12:43:08Z_854x480.mp4]]></MediaFile>
+                                            <MediaFile bitrate='1540' delivery='progressive' height='540' id='39652871'
+                                                       type='video/mp4' width='960'>
+                                                <![CDATA[https://dni-adops-proxy-prod-adopsmediaconverter.mercury.dnitv.com/48747/598649/LYG-CPFD077-010_2020-10-07T12:43:08Z_960x540.mp4]]></MediaFile>
+                                        </MediaFiles>
+                                    </Linear>
+                                </Creative>
+                            </Creatives>
+                            <Extensions>
+                                <Extension type='FreeWheel'>
+                                    <AdInfo customaid='' gid='0' cid='' format='spot_standard' variant='NORMAL'
+                                            exclusive='false'/>
+                                    <CreativeParameters>
+                                        <CreativeParameter creativeId='8043477' name='moat' type='Linear'>
+                                            <![CDATA[48747;48747;598649;47640596;47640598;;47641117;21655;g12270387;g797344;15563030;152444431;DMAXDE_DE_DCB448860010100;8043477;39652867;10;preroll;;48747:DiscoveryIntl_BrightcoveJS_secure;cpx-;1602596069529458768]]></CreativeParameter>
+                                    </CreativeParameters>
+                                </Extension>
+                            </Extensions>
+                        </InLine>
+                    </Ad>
+                </VAST>
+            </vmap:VASTAdData>
+        </vmap:AdSource>
+        <vmap:TrackingEvents>
+            <vmap:Tracking event='breakStart'>
+                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&cn=slotImpression&et=i&tpos=1341&init=1&slid=9,10]]></vmap:Tracking>
+            <vmap:Tracking event='breakEnd'>
+                <![CDATA[https://be6b.v.fwmrm.net/ad/l/1?s=g033&n=48747%3B48747&t=1602596069529458768&f=262144&cn=slotEnd&et=i&tpos=1341&init=1&slid=9,10]]></vmap:Tracking>
+        </vmap:TrackingEvents>
+    </vmap:AdBreak>
+</vmap:VMAP>
